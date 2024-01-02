@@ -1,0 +1,5 @@
+cs50==9.3.0
+Flask==3.0.0
+Flask_SocketIO==5.3.6
+Requests==2.31.0
+Werkzeug==3.0.1

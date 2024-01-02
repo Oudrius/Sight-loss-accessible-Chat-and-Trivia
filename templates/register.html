@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block body %}
+    {% if error %}
+        <p class=error><strong>Error:</strong> {{ error }}
+    {% endif %}
+    <form action="/register", method="post" class="login_form">
+        <input type="text" name="username" placeholder="Username" autofocus>
+        <br><br>
+        <input type="password" name="password" placeholder="Password">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

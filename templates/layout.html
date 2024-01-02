@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/styles.css" rel="stylesheet">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        {% block socket %}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="navigation">
+            {% if session["user_id"] %}
+            <ul class="nav_list">
+                <li><a href="/chat">Chat</a></li>
+                <li><a href="/trivia">Trivia</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+            {% else %}
+            <ul class="nav_list">
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+            {% endif %}
+        </div>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

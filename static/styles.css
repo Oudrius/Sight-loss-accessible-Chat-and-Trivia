@@ -1,0 +1,121 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    width: 100%;
+    font-size: x-large;
+}
+
+.nav_list {
+    display: inline-flex;
+    gap: 30px;
+}
+
+.chatbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 806px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.chatbox_responses {
+    width: 600px;
+    height: 600px;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.chatbox_users {
+    width: 200px;
+    height: 600px;
+    font-size: large;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.chatbox_input {
+    height: 100px;
+    flex: 1;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#message_box {
+    width: 780px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: xx-large;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.trivia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.trivia #start_button, .login_form button {
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+ol.answers li {
+    font-weight: bold;
+    font-size: large;
+    list-style-type: decimal;
+}
+
+ol.answers li button {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.question {
+    width: 500px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#correct {
+    font-weight: bold;
+    font-size: large;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login_form input {
+    width: 250px;
+    height: 50px;
+    font-size: large;
+}
