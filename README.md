@@ -1,5 +1,5 @@
 # Sight-loss accessible Chat and Trivia
-#### Video Demo:  <https://www.youtube.com/watch?v=qM7fkSPpyLo>
+
 #### Description:
 Sight-loss accessible Chat and Trivia is a final project for CS50x course. It is a prototype web app that features two main functionalities - real time chat and trivia. It is a prototype app and is not meant to be deployed and/or used for the general public.
 
